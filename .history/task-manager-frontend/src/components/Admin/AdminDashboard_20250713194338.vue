@@ -15,7 +15,7 @@ import './admin.css'
       const token = localStorage.getItem('token');
 
       // Fetch users
-      const userRes = await fetch('https://todophp-production.up.railway.app/api/users', {
+      const userRes = await fetch('http://127.0.0.1:8000/api/users', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json'
@@ -26,7 +26,7 @@ import './admin.css'
       users.value = await userRes.json();
 
       // Fetch tasks
-      const taskRes = await fetch('https://todophp-production.up.railway.app/api/tasks', {
+      const taskRes = await fetch('http://127.0.0.1:8000/api/tasks', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json'
@@ -159,7 +159,7 @@ import './admin.css'
   // add user 
   async function saveUser() {
     try {
-      const response = await fetch('https://todophp-production.up.railway.app/api/users', {
+      const response = await fetch('http://127.0.0.1:8000/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ import './admin.css'
     try {
       const userId = users.value[editingIndex.value].id;
 
-      const response = await fetch(`https://todophp-production.up.railway.app/api/users/${userId}`, {
+      const response = await fetch(`http://127.0.0.1:8000/api/users/${userId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
