@@ -1,0 +1,30 @@
+.user-dashboard {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+.user-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.user-dashboard th, td {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.user-dashboard button {
+    padding: 0.4rem 0.8rem;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-dashboard button:hover {
+    background: #27ae60;
+}

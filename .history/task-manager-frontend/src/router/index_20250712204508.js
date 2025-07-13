@@ -1,0 +1,17 @@
+import { createRouter, createWebHistory } from 'vue-router';
+import Login from '../components/Login/Login.vue';
+import AdminDashboard from '../components/Admin/AdminDashboard.vue';
+import UserDashboard from '../components/User/UserDashboard.vue';
+
+const routes = [
+  { path: '/', name: 'Login', component: Login },
+  { path: '/admin', name: 'AdminDashboard', component: AdminDashboard },
+  { path: '/user', name: 'UserDashboard', component: UserDashboard }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default router;

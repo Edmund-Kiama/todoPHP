@@ -1,0 +1,69 @@
+.user-dashboard {
+    max-width: 800px;
+    margin: 2rem auto;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.user-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    border: none; /* remove outer border */
+}
+.user-dashboard th,
+.user-dashboard td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: none; /* remove inner lines */
+    vertical-align: middle;
+    min-width: 100px;
+}
+
+.user-dashboard th {
+    background-color: #d1d8df;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-dashboard td button {
+    visibility: hidden;
+    background-color: #4DA2F7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.user-dashboard button:hover {
+    background-color: #1c74d9;
+}
+
+.user-dashboard tr:hover td button {
+    visibility: visible;
+}
+
+.user-dashboard tr:hover {
+    background-color: #f0f8ff;
+}
+.user-dashboard .status-completed {
+    background-color: rgba(0, 128, 0, 0.189);
+    text-align: center;
+    padding: 0.2em;
+}
+
+.user-dashboard .status-inprogress {
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.297);
+    padding: 0.2em;
+}
+
+.user-dashboard .status-pending {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 0.2em;
+}
