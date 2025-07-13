@@ -9,7 +9,7 @@ const user = JSON.parse(localStorage.getItem('user'));
 onMounted(async () => {
   try {
     const token = localStorage.getItem('token');
-    const res = await fetch(`http://todophp-production.up.railway.app/api/user-tasks/${user.id}`, {
+    const res = await fetch(`http://127.0.0.1:8000/api/user-tasks/${user.id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json'
@@ -40,7 +40,7 @@ onMounted(async () => {
     if (!next) return;
 
     try {
-      const response = await fetch(`http://todophp-production.up.railway.app/api/tasks/${task.id}`, {
+      const response = await fetch(`http://127.0.0.1:8000/api/tasks/${task.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
