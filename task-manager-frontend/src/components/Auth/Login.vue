@@ -59,7 +59,7 @@
             </label>
             <button>Login</button>
             <p v-if="error" class="error">{{ error }}</p>
-            <p class="descr">{ email: 'ed@example.com', password: 'User123!', role: 'user' }</p>
+            <!-- <p class="descr">{ email: 'ed@example.com', password: 'User123!', role: 'user' }</p> -->
             <p class="descr">{ email: 'kiama@example.com', password: 'admin123!', role: 'admin' }</p>
             <p class="toggle">
                 Don't have an account?
